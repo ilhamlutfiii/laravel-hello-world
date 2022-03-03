@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function index() {
-        return "Selamat Datang";
+        return "Selamat Datang ilham";
         }
     
     public function about() {

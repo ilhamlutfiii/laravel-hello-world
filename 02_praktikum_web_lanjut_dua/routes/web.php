@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use C:\Users\ilham\cms\02_praktikum_web_lanjut_dua\app\Http\Controllers\PageController;
+use app\Http\Controllers\PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
