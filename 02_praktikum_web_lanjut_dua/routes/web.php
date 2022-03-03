@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use C:\Users\ilham\cms\02_praktikum_web_lanjut_dua\app\Http\Controllers\PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,13 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return "Selamat Datang";
-    });
-
-Route::get('/about', function () {
-    return "NIM : 2041720025 <br> NAMA : Ilham Lutfiansyah <br> KELAS : TI2C";
-    });
-
-Route::get('/articles/{id}', function ($id) {
-    return "Ini adalah halaman article dengan ID".$id;
-    });
+    return view('welcome');
+});
+Route::get('/', [PageController::class, 'index']);
+Route::get('/about', [PageController::class, 'about']);
+Route::get('/articles/{id}', [PageController::class, 'articles']);
